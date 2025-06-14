@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>revision pratice</title>
+    <script>
+        function check(){
+            var a,b,c;
+            // alert("press")
+            // confirm("select")
+            // a=parseInt(document.getElementById("i1").value);
+            // b=parseInt(document.getElementById("i2").value);
+            a=parseInt(document.querySelector("#i1").value);
+            b=parseInt(document.querySelector("#i2").value);
+            c=a*b;
+            document.querySelector("#i4").value=c;
+            // document.getElementById("i4").value=c;
+          
+        }
+    </script>
+</head>
+<body>
+    <h2> multiple by two no </h2>
+    <p> enter the  a <input type=" text "id="i1"></p>
+    <p> enter the  b <input type=" text "id="i2"></p>
+    <p> result <input type="text "id="i4"></p>
+   
+    <p><button onclick="check()">ok </button></p>
+</body>
+</html>

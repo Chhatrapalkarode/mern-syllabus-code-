@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home page</title>
+    <style>
+        body{
+       background-color:blue;
+       text-decoration-color: white;
+       font-size: 2rem;
+        }
+    </style>
+</head>
+<body>
+    details:
+    <p>ID:<%=data.id%></p>
+    <p> NAME:-<%=data.name%></p>
+    <p>Hobbies:<br>
+    <ul>
+        <%data.hobbies.forEach((item)=>{
+            %>
+            <li>
+                <%=item%>
+
+            </li>
+            <% });%>
+    </ul>
+</p>
+    </body>
+</body>
+</html>
