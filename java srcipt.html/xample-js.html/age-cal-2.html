@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gae calcxulator</title>
+    <script>
+        function cal(){
+            let dob=document.getElementById("i1").value;
+            let md=new Date(dob);
+            let td=new Date();
+            let year=td.getFullYear()-md.getFullYear();
+            let month=td.getMonth()-md.getMonth();
+            let day=td.getDate()-md.getDate();//
+           
+          
+            document.getElementById("i2").value=`year ${year} month  ${month} `;
+            document.getElementById("i3").value="day" +day + "month" +month;
+        }
+    </script>
+</head>
+<body>
+    <h1> age calculator </h1>
+    <p> select age <input type="date" id="i1"></p>
+    <p>result <input type="text" id="i2"></p>
+    <p>result month  <input type="text" id="i3"></p>
+    <button  onclick="cal()">click </button>
+</body>
+</html>

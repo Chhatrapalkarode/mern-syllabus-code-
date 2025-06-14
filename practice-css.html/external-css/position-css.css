@@ -1,0 +1,42 @@
+h1{
+    color: grey;
+    background-color: purple;
+}
+.posi{
+   border: 2px solid black;
+   position: relative;
+   width: 1100px;
+   height: 1100px;
+   margin: 80px;
+   padding:10px
+   
+   
+
+   
+}
+.blue{
+    color: blue;
+    border:10px solid yellow;
+    position: absolute;
+    bottom: 10px;
+    right:20px;
+    margin: 20px;
+    
+   
+}
+.green{
+    color: green;
+    border:15px solid red;
+    position: fixed;
+    top: 90px;
+    left: 80px;
+   
+    border-radius:20px;
+}
+.pink{
+    color: yellow;
+    border:5px solid purple;
+    position:sticky;
+    top:80px;
+    right:400px;
+}

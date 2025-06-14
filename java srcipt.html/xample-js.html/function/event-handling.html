@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>event handling</title>
+    
+</head>
+<body>
+    <div id="i1" style="background-color: red;">welcome</div>
+    <button id="btn">ok</button>
+    <script>
+       var div1=document.querySelector("#i1");
+    //    var div1=document.getElementById("#i1");
+       var btn1=document.querySelector("#btn");
+       div1.addEventListener("click",function(event){
+        alert("you click")
+    });
+    btn1.addEventListener("click",()=>{
+        alert("you click button ")
+    });
+    </script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>armstrong no</title>
+    <script>
+        function check(){
+            var n;
+            n=document.getElementById("i1").value;
+            let a=parseInt (n/100); // 123/100==1
+            let b=parseInt((n/10)%10 ); // 123/10 ==  12 ,  12%10=2
+            let c=n%10;   //  123%10==3
+            let sum=(a*a*a)+(b*b*b)+(c*c*c);
+            if (n==sum){
+               // document.write("it is armstrong no ");
+               document.getElementById("i2")="yes "
+            }
+            else{
+                document.write("not armstrong no ");
+            }
+        }
+    </script>
+</head>
+<body>
+    <p> enter the 3 digit no <input type="text" id="i1"></p>
+    <p> result <input type="text " id="i2"></p>
+    <button type="submit" onclick="check()">click </button>
+    
+</body>
+</html>

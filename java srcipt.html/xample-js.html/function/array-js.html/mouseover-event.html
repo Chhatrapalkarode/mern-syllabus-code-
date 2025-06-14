@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mouseover</title>
+</head>
+<body id="bd1">
+    <button id="btn1">submit</button>
+    <p id="p1">event handling</p>
+    <script>
+        document.getElementById("btn1").onmouseover=function(){mouseover()};
+        document.getElementById("p1").onmouseout=function(){mouseover()};
+        function mouseover(){
+            document.getElementById("btn1").style.color="purple";
+            document.getElementById("btn1").style.background="orange";
+            document.getElementById("p1").style.color="yellow";
+            document.getElementById("bd1").style.background="green";
+        }
+        function mouseout(){
+            document.getElementById("p1").style.color="yellow";
+            document.getElementById("btn1").style.background="green";
+            document.getElementById("bd1").style.background="red";
+        }
+    </script>
+</body>
+</html>

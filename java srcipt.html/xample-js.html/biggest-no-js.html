@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>biggest no </title>
+    <script>
+        function check(){
+            var a,b,c,d;
+            a=parseInt(document.getElementById("i1").value);
+            b=parseInt(document.getElementById("i2").value);
+            c=parseInt(document.getElementById("i3").value);
+            if (a>b && a>c){
+                document.getElementById("i4").value=`a is big ${a}`;
+             }
+            else if(b>a && b>c){
+                document.getElementById("i4").value=`b is big ${b}`;
+            }
+            else if(c>a && c>b){
+                document.getElementById("i4").value=`c is big ${c}`;
+            }
+        }
+    </script>
+</head>
+<body>
+    
+   <h1> biggest no </h1> 
+   <p> enter the no a <input type="text "id="i1"></p>
+   <p> enter the no b <input type="text "id="i2"></p>
+   <p> enter the no c <input type="text "id="i3"></p>
+   <p> result  <input type="text "id="i4"></p>
+   <button onclick="check()"> click</button>
+   </body>
+   </html>

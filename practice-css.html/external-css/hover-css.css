@@ -1,0 +1,15 @@
+button:hover{/* button:hover me gap nahin dena hai  nahi to erroe a  jayega 
+     yadi button :hover likhe to error ayega */
+    color:pink;
+    background-color:grey;
+
+}
+p:hover{
+    color: blue;
+    text-decoration: underline;
+
+
+}
+button:active{
+    color: yellow;
+}

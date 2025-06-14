@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function sum(){
+            var a;
+            a=document.getElementById("i1").value;
+            var c=0;
+            for(let i=0;i<a.length;i++){
+                // document.write(a[i]+"<br>");
+                if(a[i]=='a' || a[i]=='e' || a[i]=='o' || a[i]=='u' || a[i]=='i' ){
+                  c--
+                    document.write(` vowael are wtitten here to please check the vowel no here = ${a[i]} <br>  count is  `)
+                }
+
+              
+            }
+            document.write("no vowal are here "+ c)
+
+            
+        }
+    </script>
+</head>
+<body>
+    <P> enter the a no <input type="text" id="i1"></P>
+    <button onclick="sum()">sum</button>
+</body>
+</html>

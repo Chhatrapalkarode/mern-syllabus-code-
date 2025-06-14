@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .gri{
+            background-color: aqua;
+           /* text-align: center;*/
+           font-size: 25px;
+           /*margin: 10px;
+        padding: 20px;*/
+            
+            height: 800px;
+            width: 500px;
+           
+            margin: 80px auto;
+        }
+         .blu{
+            background-color: wheat;
+            height: 200px;
+            width: 200px;
+            transition-duration: 15s;
+            transition-delay:1s ;
+            font-size: 20px;    
+            margin: 20px;
+           /*transition-property: background-color;/* is me  sirf b-c pe hover transition ke hisab se karta hai     transition-property:all laga diye to puri property pe lagegi ;*/
+           transition-property: all;
+           transition-timing-function: ease-out;
+            transform: rotatez(120deg);
+            transition-property: border-radius 14s margin 10s background-color 2s width 2;
+            
+         }
+         .blu:hover{
+            border-radius: 50%;
+            background-color: red;
+            margin: 110px;
+            width: 400px ;
+                
+         }
+           
+           
+           
+            
+        
+         
+    </style>
+</head>
+<body>
+    <h1>transform</h1>
+    <div class="gri">
+        <div  class="blu" style="color: blue;" >blue</div>
+        <div  class="blu" style="color: green;">green</div>
+        <div class="blu" style="color: darkorange;">yellow </div>
+        <div class="blu" style="color: red;"> red</div>
+    </div>
+</body>
+</html>

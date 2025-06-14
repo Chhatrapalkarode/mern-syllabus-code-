@@ -1,0 +1,81 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=>, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    .fg{
+        border: 2px solid brown;
+        color: red;
+    }
+    .display{
+        height: 500px;
+        width: 300px;
+        
+       
+        display: flex;
+        border: 5px solid greenyellow;
+       
+       /*font-size: 25px;*/
+       flex-wrap:wrap;
+       gap: 8;
+       /*justify-content: end;*/
+       margin: 20px;
+       justify-content:start;
+       align-items: end;/* is me end se chalo hoga ye item single line ke liye hota hai */
+       flex-direction: row;
+
+       /* flex-flow: wrap;/* is me reverse hho jata hai 1 line ek me baki dusri line me  print hoga */
+       /*flex-flow:reverse;*/
+       /*flex-flow: row-reverse;*/
+    } 
+    #order-1{
+        order:582;
+        flex-grow:2;/* is lenght bad jati hai */
+    }
+    #order-2{
+        /*order :20;/* kitne no me jayega kaise 20 dale no 20 no mw 
+        color: brown;
+        flex-grow:10;*/
+       /* flex-shrink:5;/*kitni speed se shrink (jayega page ko chhote karn ne per*/
+       /* align-self: flex-start;
+        color: brown;*/
+    }
+    </style>
+</head>
+<body>
+<div class="display">
+<div class="fg"> sigup</div>
+<div class="fg"> login</div>
+<div class="fg order-1"> about iot</div>
+<div class="fg"> career</div>
+<div class="fg"> contact</div>
+<div class="fg">phone no  </div>
+<div class="fg" id="order-1"> sigup</div>
+<div class="fg"> login</div>
+<div class="fg"> about</div>
+<div class="fg" id="order-2"> career  her </div>
+<div class="fg"> contact</div>
+<div class="fg">phone no  </div>
+
+<div class="fg"> contact</div>
+<div class="fg">phone no  </div>
+<div class="fg"> sigup</div>
+<div class="fg"> login</div>
+<div class="fg"> about</div>
+<div class="fg"> career</div>
+<div class="fg"> contact</div>
+<div class="fg">phone no  </div>
+<div class="fg"> sigup</div>
+<div class="fg"> login</div>
+<div class="fg"> about</div>
+<div class="fg"> career</div>
+<div class="fg"> contact</div>
+<div class="fg">phone no  </div>
+
+   
+</div>
+</body>
+</html>

@@ -1,0 +1,20 @@
+#first{
+    color:grey;
+    background-color: black;
+    font-size: 50px;
+}
+#second{
+    color:purple;
+    font-size: 40;
+}
+#para{
+    color:yellow;
+    background-color:black;
+    font-size:45px;
+}
+
+
+
+.dot{
+    color: red;
+}

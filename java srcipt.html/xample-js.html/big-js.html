@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>big no</title>
+    <script>
+        function sum1()
+        {
+
+            
+            // var n=  parseInt(document.getElementById("b1").value);
+            // var n1=  parseInt(document.getElementById("b2").value);
+            var n=parseInt(document.querySelector('#b1').value);
+            var n1=parseInt(document.querySelector('#b2').value);
+            if (n>n1){
+                document.querySelector('#b3').value="ok n is big"+n
+            }
+            else{
+                document.querySelector('#b3').value="ok n1 is big"+n1
+            }
+             
+            // document.getElementById("b3").value=s;
+        }
+    </script>
+</head>
+<body>
+    <p>enter the no n <input type="text" id="b1"></p>
+    <p>enter the no n1 <input type="text" id="b2"></p>
+    <p > r <input type="text"  id="b3"></p>
+    <button type="submit" onclick="sum1()"
+    >submit</button>
+</body>
+</html>

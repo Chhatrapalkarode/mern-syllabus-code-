@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid </title>
+    <style>
+        .gri{
+            background-color: aquamarine;
+            width: 700px;
+            height: 700px;
+            border: 5px solid purple;
+            font-size: 20px;
+            display:grid;
+            /*grid-template-columns: 100px 100px 100px 100px;   is me sab 100px me spacelenge column bise*/
+           /* grid-template-columns:auto auto auto; is auto kitna lagayenge  utni column banegi  or grid-template-row me jitna auto lagayenge unti roww create hogi */
+          /* grid-template-columns: repeat(4,1fr); is me repeat(count,1fr) count=3 hai to 3 column banegi or 1fr ka matlab hai kin 100 px jahaga lega */
+           /* grid-template-columns: 1fr 1fr 1fr 1fr; is me kitna fr lagega  utni column banegi kaise ki 1fr 1fr 2 bar likhe hai hai to sirf do column banegi */
+          /* grid-template-rows: 1fr 1fr ;/* is me 2 row banegi  equal space me */
+           /* justify-items: center;/* justify-items me "horizontal line banegi jaise [justify-items: center] is center me ;[justify-items:end; "] is me end me */
+           /* grid-template-columns: 1fr 1fr 1fr 1fr;
+           align-items:center;/* is verticle bana ta hai  [align-items:center;] center hai to center, me yadi end hai to end me  */
+          grid-template-rows:auto auto ;
+           grid-row: 2/4;
+        }
+    </style>
+</head>
+<body>
+    <h1> grid tag </h1>
+    <div class="gri">
+        <div  style="color: blue;" >blue</div>
+        <div style="color: green;">green</div>
+        <div style="color: yellow;">yellow </div>
+        <div style="color: red;"> red</div>
+    </div>
+</body>
+</html>

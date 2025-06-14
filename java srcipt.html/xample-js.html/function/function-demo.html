@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function demo1(n){
+             var i,c=1;
+           for (i=0;i<n;i++){
+                var r=n%10;
+                
+               c=c+r;
+               var n=parseInt(n/10);
+                document.write("sum is =:"+c);
+                
+            }
+
+        }
+            function mainfun(){
+             p=parseInt(document.getElementById("i1").value);
+             demo1(p);
+         }
+        // 2 nd function type are here 
+       
+    </script>
+</head>
+<body>
+    <P> enter the n no </P>
+    <input type="text" id="i1"><br>
+   <button onclick="mainfun()">demo1</button> <br><br>
+  
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+      function sum(a){
+        return a%2==0;
+      }
+    function sum1(){
+        var b=[12,14,15,19,21,22];
+        var d=b.filter(sum);
+        document.write(d)
+    }
+    // arrow function
+    var arro=(a)=>{
+            if( a%2!=0){
+                return a;
+            }
+        
+    }
+    function arro1(){
+        var a=[2,4,5,6,8,9,11,14,15,18,19,20];
+        var b=a.filter(arro);
+        document.write(b+"<br>")
+    }
+    // 3rd method 
+function canVote(age) {
+    return age >= 18;
+}
+function canVote1(){
+    let filtered = [24, 33, 16, 40].filter(canVote);
+    document.write(filtered);
+}
+
+    </script>
+</head>
+<body>
+    <button onclick="canVote1()"> please</button><hr>
+    <button onclick="sum1()"> sum</button><hr>
+    <button onclick="arro1()"> arro</button>
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // arrow are currently command 
+    //    var sum=(a)=>{
+    //             var i,m=1;
+    //              var a=10
+    //             for(i=0;i<=10;i++){
+    //                  m=i*a;
+    //                 document.write("ok"+i)
+    //                 document.write(m+"<br>");
+                     
+                    
+    //         }
+    //         return m;
+    //     }
+    //     function mainfun(){
+    //         var b,a=10;
+    //        b= sum(a);
+    //        document.write(b+"<br>");
+    //     }
+    // end here arrow function 
+
+    // strat event listener function 
+    function ok(){
+        var b=document.querySelector('#b1');
+        b.addEventListener("click", ()=>{
+
+        
+            alert("success");
+            alert("ok");
+                })
+
+    //     function hq(){
+
+        
+    //     alert("success");
+    //     alert("ok");
+    // }
+    }
+    function ok2(){
+        var b=document.querySelector('#b2');
+        b.addEventListener("click",hq())
+
+        
+           
+                
+        
+        function hq(){
+
+        
+        alert("success 2");
+        alert("ok2 done ");
+    }
+    }
+      function p1(){
+         var p=document.querySelector('p');
+        p.addEventListener("click",()=>{
+        alert("paragraph are event ");
+        console.log("para")
+        });
+    }
+    function hd() {
+        var h=document.querySelector('h1');
+        h.addEventListener("click",()=>{
+        alert("heading  are event ");
+        console.log("ok")
+        });
+    
+    }
+   
+    </script>
+</head>
+<body>
+    <!-- this is arrow function button -->
+    <!-- <button onclick="mainfun()">ok </button> -->
+     <p onclick="p1()"> this is paragraph texts </p>
+     <button  id= "b1" onclick="ok()">ok11 </button>
+     <button  id= "b2" onclick="ok2()">ok12 </button>
+     <h1 onclick="hd()">this is h1 </h1>
+</body>
+</html>

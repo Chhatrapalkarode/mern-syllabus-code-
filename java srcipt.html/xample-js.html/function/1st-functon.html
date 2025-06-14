@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>function tyoe 1 t</title>
+    <script>
+        function check(a,b){
+          
+            c=a+a;
+            c1=b+b;
+            return  c,c1;
+           
+        }
+        function mainful(){
+            var a,b,d;
+            a=parseInt(document.getElementById("i1").value);
+            b=parseInt(document.getElementById("i2").value);
+            for(var i=0;i<=5;i++)
+        {
+            check(a,b);
+            document.write("c="+c+"c1="+c1+"<br>");
+        }
+    }
+
+    </script>
+</head>
+<body>
+    <p>enter the no a <input type="text" id="i1"></p>
+    <p>enter the no b <input type="text" id="i2"></p>
+    <button onclick="mainful()">button </button>
+</body>
+</html>

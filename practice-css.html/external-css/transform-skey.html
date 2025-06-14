@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .gri{
+            background-color: aqua;
+           /* text-align: center;*/
+           font-size: 25px;
+           /*margin: 10px;
+        padding: 20px;*/
+            
+            height: 800px;
+            width: 500px;
+           
+            margin: 80px auto;
+        }
+         .blue{
+            background-color: wheat;
+            height: 200px;
+            width: 200px;
+            font-size: 25px;
+           transform: rotatey(45deg) scalez(1.2) skew(25deg) translate(85px);/*short hand property */
+           
+          /*transform:skew(85deg, 15deg);/*is me kkitni degree pe ghumana hai utni deg daal dena kaise (x,y,z, is x me kitna y me kitna or z me kitna  degree  */
+            /*transform:translate(55px); is me bhi kis direction me or kitne door le jana hai  x,y,z ke hisab se */
+         
+            /*transform: rotatez(50deg);/* is me element rotate hote hai pura  box nahi kis  direction me kitna degre jaise rotatex/y/z */
+         }
+         .blu{
+            background-color: wheat;
+            height: 200px;
+            width: 200px;
+            font-size: 25px;
+            margin: 20px;
+           display: flex;
+           justify-content: center;
+           transform: rotatez(10deg);/* is me element rotate hote hai pura  box nahi kis  direction me kitna degre jaise rotatex/y/z */
+           /*transform: translate(35px,55px,95px); is me kis direction  or kitni door le jana hai us ke liye hai degree ke liye nahi hai  jaise [x,y,z x me kitne or direction me  or y me bhi  or z me bhi ]
+           
+          /*transform:skew(85deg, 15deg);/*is me kkitni degree pe ghumana hai utni deg daal dena kaise (x,y is x me kitna y me kitna  degree  */
+         
+         
+         }
+         .bluee:hover{
+            background-color: wheat;
+            height: 200px;
+            width: 200px;
+            font-size: 25px;
+            margin: 20px;
+            transition: 5s;
+           
+            transform: translate(45px, 95px);
+
+            
+
+            }
+         .gri:hover{
+            background-color: brown;
+            transition: 8s;
+         }
+    </style>
+</head>
+<body>
+    <h1>transform skey  </h1>
+    <div class="gri">
+        <div  class="blue" style="color: blue;" >blue</div>
+        <div  class="blu" style="color: green;">green</div>
+        <div class="bluee" style="color: darkorange;">yellow </div>
+        <div class="blue" style="color: red;"> red</div>
+    </div>
+</body>
+</html>

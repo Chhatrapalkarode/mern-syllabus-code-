@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div class="coont">
+        <div class="box">hello click</div>
+    </div>
+    <button id="btn">click me </button>
+
+ <script>
+    let b1=document.getElementById('btn');
+    b1.addEventListener("click",()=>{
+        alert("change here ")
+        document.querySelector(".box").innerHTML="this is change click "
+         document.querySelector("#btn").innerHTML="this is change click button  "
+    })
+</script>
+</body>
+</html>

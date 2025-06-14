@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>function </title>
+    <script>
+        function asdf(n){
+            if(n%2==0){
+                 return  "yes" //document.write(" yes ");
+
+            }
+            else{
+                 return "no "// document.write("not");
+            }
+        }
+        function main(){
+            var a;
+            a=parseInt(document.getElementById("i1").value);
+            var d= asdf(a);
+            document.getElementById("i2").value=d;
+           // if (d!=0){
+           // document.write(" yes "+d);
+           // }
+
+          // else{
+          //  document.write("not "+d);
+          // }
+
+        }
+    </script>
+</head>
+<body>
+     <p> enter the no a <input type="text" id="i1"></p>
+     <p> enter the no a <input type="text" id="i2"></p>
+    <button type="submit" onclick="main()">ok</button>
+</body>
+</html>

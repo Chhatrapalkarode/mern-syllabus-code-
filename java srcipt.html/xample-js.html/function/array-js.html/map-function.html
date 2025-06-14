@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>map function </title>
+    <script>
+        function show(a){
+            // var a=[1,5,4,5,2,14,54,25];
+        
+
+            // function show1(){
+            a.map((item)=>
+        {
+            document.write(item);
+        }
+        )
+        }
+        function logo(a){
+            var i;
+            for(i=0;i<=a.length;i++){
+                // document.write("second"+a[i]+"<br>");
+                document.write("<br>");
+                // return a[i];
+            }
+            return a[i];
+        }
+        function show1(){
+            var a;
+            a=[1,5,4,5,2,14,54,25];
+            show(a);
+          var  n= logo(a);
+           document.write(n+"<br>");
+
+        }
+    </script>
+</head>
+<body>
+    <button onclick="show1()">click </button>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+<div  id="i1" style="background-color: red;">
+     component 1
+     <div id="i2" style="background-color: blue;">
+        component 2
+        <div id="i3" style="background-color: purple;">
+            component3
+
+        </div>
+     </div>
+    </div>
+    <script>
+        let div1=document.querySelector("#i1");
+        let div2=document.querySelector("#i2");
+        let div3=document.querySelector("#i3");
+        div1.addEventListener("click",function(event){
+            alert("component 1")
+        });
+        div2.addEventListener("click",function(event){
+            alert("component 2")
+        });
+        div3.addEventListener("click",function(event){
+            alert("component 3")
+        });
+    </script>
+    </body>
+</html>

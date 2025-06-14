@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <script>
+     function demo2(){
+        var c=0;
+        n=parseInt(document.getElementById("i1").value);
+        while(n>0){
+            // c++;
+            n=parseInt(n/10);
+            c++;
+           
+            // document.write(c+"<br>");
+        }
+        return c;
+       
+        // document.write(c);
+    }
+    function mainfun1(){
+       
+        var  n1;
+        // n1=parseInt(document.getElementById("i1").value);
+        var  p=demo2();
+        if (p%2==0){
+            document.write(p+" even <br>");
+        }
+
+        // document.write(p+" odd <br>");
+
+    }
+   
+   </script>
+</head>
+<body>
+    <P> enter the n no </P>
+    <input type="text" id="i1"><br>
+   <button onclick="mainfun1()">demo1</button> 
+</body>
+</html>

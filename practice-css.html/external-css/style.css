@@ -1,0 +1,29 @@
+h1{
+    text-align: center;
+    color: blue;
+    background-color: black;
+    font-size: 2;
+    text-decoration: overline;
+
+}
+h2{
+    color: green;
+    background-color: black;
+    font-weight: 1800;
+    text-decoration: underline ;
+    font-size: 80px;
+}
+p{
+    color: yellow;
+    background:gray;
+    text-align:justify;
+    text-align: center;
+    text-decoration:purple line-through;
+    line-height: 10;
+    letter-spacing: 5px;
+}
+h3{
+    letter-spacing: 10px;
+    color: gray;
+    font-family: Impa;
+}

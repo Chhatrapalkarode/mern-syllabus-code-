@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            color: aquamarine;
+            font-size: 50px;
+            text-align:center;
+           
+        }
+        .gri{
+            display: grid;
+            grid-template-columns: 1fr 1fr ;
+            justify-items:center;
+            border: 5px solid green;
+        }
+        .blue{
+            height:50px;
+            width:50px;
+            padding:20px;
+            border: 5px solid greenyellow;
+            margin: 25px;
+            animation-name:first ;
+            animation-duration: 5s;
+            animation-iteration-count: 5;
+            animation-direction: normal;
+            transform: translate(40px);
+            transition-timing-function:ease;
+            
+           
+
+        }
+        @keyframes first{
+            from{
+                width: 120px;
+                background-color: blue;
+                align-items: start;
+                font-size: 500px;
+
+            }
+            to{
+                width: 240px;
+                background-color:brown ;
+                align-items:end;
+                border-radius: 50%;
+                font-size: 50px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>animation</h1>
+    <div class="gri">
+        <div  class="blue" style="color: blue;" >blue</div>
+        <div  class="blue" style="color: green;">green</div>
+        <div class="blue" style="color: darkorange;">yellow </div>
+        <div class="blue" style="color: red;"> red</div>
+    </div>
+</body>
+</html>

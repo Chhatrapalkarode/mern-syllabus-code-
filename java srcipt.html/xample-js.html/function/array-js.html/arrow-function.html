@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>arrow-function </title>
+    <script>
+        var sum=(a)=>{
+            let i,f=1;
+            for(i=0;i<=a;i++){
+                f=f*a;
+            
+                 return f
+            }
+            //  return f
+        }
+
+        function sum1(a,b){
+            var d=a+b;
+             return d
+        }
+
+
+        function show(){
+            let a,b;
+            a=parseInt(document.getElementById("i1").value);
+            b=parseInt(document.getElementById("i2").value);
+           var e= sum(a);
+           document.getElementById("i3").value=e
+            var r= sum1(a,b);
+            document.getElementById("i4").value=r
+
+
+
+        }
+    </script>
+</head>
+<body>
+    <p>  enter the the no a <input type="text " id="i1"></p>
+    <p>  enter the the no b <input type="text " id="i2"></p>
+    <p>  result  <input type="text " id="i3"></p>
+    <p>  result  1 <input type="text " id="i4"></p>
+    <button onclick="show()"> ok </button>
+</body>
+</html>
